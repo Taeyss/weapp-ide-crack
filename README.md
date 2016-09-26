@@ -1,12 +1,21 @@
-#微信应用号官方IDE
+#微信应用号/小程序开发IDE
 
-![IDE](https://cloud.githubusercontent.com/assets/876707/18773863/cca59fae-8185-11e6-9d7b-050ba646b456.png)
+<img src="https://cloud.githubusercontent.com/assets/876707/18773863/cca59fae-8185-11e6-9d7b-050ba646b456.png" width = "172" height = "150" alt="LOGO" align=center />
+
+***注意：先下0.7版用于登录，再下0.9版用于开发，目前只能本地编译，不能上传***
+
+##下载声明
+
+* 相关代码纯属技术研究与爱好，请在学习使用后删除
+* 相关下载资源均来自于QQ群，与作者及贡献者本人无关
+* 当微信官方提供正式版本后，请支持微信官方，一起把应用号做的更好
 
 ##相关资源
 
 * 开发群：
 	* 一群（452137839）（满）
-	* 二群（160108745）
+	* 二群（160108745）（满）
+	* 三群（588937445）
 
 * 开发工具 v0.7
 	* 百度: https://pan.baidu.com/s/1pLxqFzH （密码: bwt9）
@@ -20,6 +29,19 @@
   * 百度: https://pan.baidu.com/s/1o8hJFuU （密码: bsky）
   * 360: https://yunpan.cn/ckvXAacJjvsgR （提取码：3327）
 
+##贡献者名单
+
+感谢大家的贡献！
+
+| 时间 | 贡献者 | 贡献内容 |
+|--------|------------|---------------|
+| 2016.09.23 | importcjj | 去除调用接口必须在mp后台配置的限制 |
+| 2016.09.23 | AlayshChen | 去除请求URL域名限制 |
+| 2016.09.23 | qdsang | 解决无法创建App问题 |
+| 2016.09.22 | loulin | 补充常见问题 |
+| 2016.09.22 | fakefish | 修复0.7下载链接 |
+| 2016.09.22 | QFish | 补充常见问题 |
+
 ##破解步骤
 
 ***Mac测试可用，Windows测试可用***
@@ -32,11 +54,14 @@
   * Windows：
     * \package.nw\app\dist\components\create\createstep.js
     * \package.nw\app\dist\stroes\projectStores.js
+    * \package.nw\app\dist\weapp\appservice\asdebug.js
   * Mac：
     * /Resources/app.nw/app/dist/components/create/createstep.js
     * /Resources/app.nw/app/dist/stroes/projectStores.js
-  
+    * /Resources/app.nw/app/dist/weapp/appservice/asdebug.js  
+
   注意，这里微信工程师拼写错了，***是stroes没错***！！！
+  更新到0.9.092300之后，再启动会报400013错误，微信工程师把这个文件夹名字改成stores了，再重新按照上面替换就ok了。
 
   **[替换的文件点击这里下载](https://github.com/gavinkwoe/weapp-ide-crack/archive/master.zip)**
 
@@ -94,6 +119,9 @@
   * 问题原因：please bind your wechat account to the appid first
   * 解决方案：先使用0.7版本的进行扫码登陆，登陆成功后，再用0.9的版本打开就直接进入了。
     * 0.7版本地址：http://dldir1.qq.com/WechatWebDev/release/0.7.0/wechat_web_devtools_0.7.0.dmg
+5. mac版本升级到0.9.092300后，asdebug.js报错
+  * 问题原因：TypeError: Cannot read property 'MaxRequestConcurrent' of undefined
+  * 解决方案：替换 /Resources/app.nw/app/dist/weapp/appservice/asdebug.js  
 
 ##工具截图
 
